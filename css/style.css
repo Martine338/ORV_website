@@ -1,0 +1,256 @@
+*{
+    /*border: 1px solid rgb(83, 83, 83);*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header, #accueil, #conteneurarticle, #galerie div{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+ #accueil, #inscription, #tableau, #article, #vidéo, #galerie {
+    height: 100vh;
+    min-height: 100vh;
+    width: 100vw;
+    min-width: 100vw;
+    padding: 20px;
+    height: fit-content;
+}
+
+#tableau, #inscription, #article, #vidéo, #galerie, header{
+    color: white;
+}
+
+#contacts{
+    width: 100vw;
+    min-width: 100vw;
+    padding: 20px;
+    height: fit-content;
+}
+
+/*-------arrière plans------------------*/
+#accueil{
+    background-image: url("../images/background/bg1.jpg");
+    background-size: cover;
+}
+#inscription{
+    background-image: url("../images/background/bg2.jpg");
+    background-size: cover;
+}
+#tableau{
+    background-image: url("../images/background/bg3.jpg");
+    background-size: cover;
+}
+#article{
+    background-image: url("../images/background/bg4.jpg");
+    background-size: cover;
+}
+#vidéo{
+    background-color: #0c0c41;
+    background-size: cover;
+}
+#galerie{
+    background-color: #464187;
+    background-size: cover;
+}
+
+#contacts{
+    background-color: black;
+}
+
+/*------header--------------------*/
+header {
+    width: 100vw;
+    background-color: #1553beff;
+    border: 5px double white;
+    position: fixed;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header > h1{
+    margin: 0;
+    padding: 5px;
+}
+
+a {
+    color: white;
+}
+
+a:hover{
+    color: gold;
+}
+
+/*------accueil------------------------*/
+
+.titre, .description{
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.description{
+    height: 9rem;
+    align-content: center;
+    font-size: 13px;
+    text-align: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 30px;
+    right: 16px;
+}
+
+.titre{
+    height: 3rem;
+    width: 23rem;
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 13rem;
+    left: 20px;
+}
+
+/*----Inscription------------------------------*/
+
+#inscription h1{
+    background-color: #0c0c41c0;
+    width: 50rem;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+fieldset{
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: rgba(21, 83, 190, 0.75);
+    width: 30rem;
+}
+
+.label_input{
+    padding: 20px 40px 20px 40px;
+}
+
+.espace{
+    display: flex;
+    justify-content: space-around;
+}
+
+form {
+    width: 50rem;
+    justify-content: center;
+    align-content: center;
+}
+
+/*-----tableau-------------------*/
+
+#tableau{
+    align-content: center;
+}
+
+table, caption, th{
+    background-color: rgba(21, 83, 190, 0.75);
+    border: 2px solid white;
+    padding: 15px;
+    margin: 30px;
+}
+
+td{
+    border: 1px solid white;
+    padding: 5px;
+}
+
+caption{
+    width: 30rem;
+    border-radius: 10px;
+}
+
+/*--------article----------------*/
+
+
+
+#conteneur_article{
+    background-color: #0c0c41c0 ;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#conteneur_article p{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.conteneur, article img{
+    width:20rem;
+    height: auto;
+    text-align: center;
+}
+
+/*-------vidéo-----------------------*/
+#vidéo{
+    justify-content: center;
+    align-content: center;
+}
+
+/*-------galerie-----------------------*/
+
+#galerie{
+    align-content: center;
+}
+
+#galerie h2, #galerie p{
+    text-align: center;
+}
+
+#galerie div {
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+#galerie img {
+    width: 140px;
+    margin: 20px 20px 20px 20px;
+    border: 2px solid gold;
+    border-radius: 50px;
+}
+
+#galerie img:hover { 
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);    
+}
+
+ /*-----footer---------------*/
+
+#contacts{
+    color: white;
+    align-content: center;
+    text-align: center;
+    padding: 30px 0px 10px 0px;
+}
+
+#contacts p {
+    padding: 5px;
+}
+
+.petit_text{ 
+    margin: 20px 0px 0px 0px;
+    font-size: 12px;
+}
+
+.icon{
+    font-size: 25px;
+    margin: 20px 10px 10px 10px;
+}

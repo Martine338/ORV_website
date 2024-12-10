@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORV</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- titre + navigation -->
+    <header>
+       
+        <h1>Site web sur ORV</h1>
+
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#inscription">Inscription</a>
+            <a href="#tableau">Tableau</a>
+            <a href="#article">Article</a>
+            <a href="#vidéo">Vidéo</a>
+            <a href="#galerie">Galerie</a>
+            <a href="#contacts">Contacts</a>
+        </nav>
+    </header>
+
+    <!-- accueil, titre, auteur, description, addresse GitHub -->
+    <section id="accueil">
+        <h1 class="titre">Omniscient Reader's Viewpoint</h1>
+
+        <div class="description">
+        <h1>Autrice: Véronika Vong</h1>
+        <p>Automne 2024
+        <br>582-1W1 – Mise en page Web
+        <br>Techniques d’Intégration Multimédia
+        <br>Collège de Maisonneuve
+        <br>TP2</p>
+        </div>
+    </section>
+
+    <!-- insciption: formulaire avec titre -->
+    <section id="inscription">
+        <form>
+
+            <h1>Inscrivez-vous au Kim Dokja's Company</h1>
+
+            <fieldset>
+
+            <div class="label_input">
+                <label for="username">Nom d'utilisateur:</label>
+                <input type="text" id="username" name="username"><br>
+            </div>
+
+            <div class="label_input">
+                <p>Votre genre:</p><br>
+                <input type="radio" id="homme" name="genre" value="homme">
+                <label for="homme">Homme</label><br>
+                <input type="radio" id="femme" name="genre" value="femme">
+                <label for="femme">Femme</label><br>
+                <input type="radio" id="autre" name="genre" value="autre">
+                <label for="autre">Autre</label><br> 
+            </div>
+
+            <div class="label_input">
+                <label for="personnage">Personnage préféré:</label>
+                <input type="text" id="personnage" name="personnage"><br>
+            </div>
+
+            <div class="label_input">
+                <div class="espace">
+                <input type="checkbox" id="dokja" name="kim_dokja" value="dokja">
+                <label for="dokja"> 51/49</label>
+                <input type="checkbox" id="hakhyun" name="lee_hakhyun" value="hakhyun">
+                <label for="hakhyun"> 49/51</label><br>
+                </div>
+            </div>
+
+            <div class="label_input">
+                <div class="espace">
+                <input type="submit" value="Soumettre" aria-label="Soumettre">
+                <input type="reset" value="Réinitialiser" aria-label="Soumettre">
+                </div>
+            </div>
+
+        </fieldset>
+        </form>
+
+    </section>
+
+<!-- tableau: entete table et informations & tableau sur artistes-->
+    <section id="tableau">
+
+        <table>
+            <caption><h3>Informations sur l'histoire</h3></caption>
+        
+        <thead>
+            <tr>
+                <th>Type de consommation</th>
+                <th>Date de sortie</th>
+                <th>Date terminé</th>
+                <th>Longueur de la série</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Roman</td>
+                <td>6 janvier 2018</td>
+                <td>2 février 2020</td>
+                <td>6 volumes</td>
+            </tr>
+            <tr>
+                <td>Manga</td>
+                <td>26 mai 2020</td>
+                <td>En cours...</td>
+                <td>+237 chapitres</td>
+            </tr>
+            <tr>
+                <td>Film</td>
+                <td>Prédiction de sortie en 2025</td>
+                <td></td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td>Anime</td>
+                <td>Annoncer en 2024</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+
+        </table>
+
+        <table>
+            <tbody>
+                <tr>
+                    <th>Écrivain</th>
+                    <td>Sing Shong</td>
+                </tr>
+                <tr>
+                    <th>Artists</th>
+                    <td>Blackbox (Roman) et Sleepy-C (Manga)</td>
+                </tr>
+                <tr>
+                    <th>Adapteur</th>
+                    <td>UMI</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+<!-- images + textes + titres-->
+    <section id="article">
+        <div id="conteneur_article">
+            <article class="conteneur">
+                <h1>Autrice</h1>
+                <h2>Han Sooyoung</h2>
+                <img src="images/trio/munpia bookmarks 1.png" alt="Han Sooyoung">
+                <p class="textes">Elle est la créatrice de TWSA, et aussi le plagie. Elle a écrit plus de 3000 chapitres, gaspillant 13 ans de sa vie pour le seul lecteur. Elle ferait le monde tombé en ruines et tuerait de nombreuses personnes juste pour que Kim Dokja ne se suicide pas et vive.</p>
+            </article>
+
+            <article class="conteneur">
+                <h1>Lecteur</h1>
+                <h2>Kim Dokja</h2>
+                <img src="images/trio/munpia bookmarks 2.png" alt="Kim Dokja">
+                <p class="textes">Il est le personnage principal de « Omniscient's Reader Viewpoint » et le seul lecteur de Three Ways to Survive in a Ruined World jusqu’à la toute fin. Il a été victime d’intimidation toute son enfance jusqu’à l’âge adulte à cause qu’il était le fils d’un meurtrier. Il adore tellement l’histoire et les personnages qu’il se sacrifie pour eux. Ses sacrifices pour les personnages, pour TWSA, sont son salut, mais, en retour, les personnages, qui aimaient profondément le seul lecteur de leur histoire, étaient désespérés.</p>
+            </article>
+
+            <article class="conteneur">
+                <h1>Personnage</h1>
+                <h2>Yoo Joonghyuk</h2>
+                <img src="images/trio/munpia bookmarks 3.jpg" alt="Yoo Joonghyuk">
+                <p class="textes">Il est le personnage principal de « Three Ways to Survive in a Ruined World » et un personnage secondaire d’ORV. Il est le personnage le plus aimé de tous les personnages dans TWSA par le seul lecteur. Il a enduré tant de souffrances en régressant, qu’il a la « dépression de régression ». Il a trouvé la seule personne qui le comprenait vraiment le plus, pour ensuite le perdre à nouveau.</p>
+            </article>
+        </div>
+    </section>
+
+<!-- titre et vidéo-->
+    <section id="vidéo">
+        <h1>ORV mal expliqué</h1>
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/pfex3Gw050A" title="badly explaining all of omniscient reader in 6 minutes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+<!--galerie: images en vignette-->
+    <section id="galerie">
+        <h2>Galerie</h2>
+        <p>Quelques images iconique de ORV</p>
+        <div>
+            <a href=""><img src="images/iconique pictures/574 - I'll keep watching you .jpg" alt="Kim Dokja regarde la caméra"></a>
+            <a href=""><img src="images/iconique pictures/599 - I saw the face of the protagonist I knew so well .jpg" alt="Kim Dokja avec le soleil sur un oeil"></a>
+            <a href=""><img src="images/iconique pictures/blackbox  (11).jpg" alt="Kim Dokja et Yoo Joonghyuk"></a>
+            <a href=""><img src="images/iconique pictures/blackbox  (18).jpg" alt="Kim Dokja fait le signe de paix"></a>
+            <a href=""><img src="images/iconique pictures/blackbox  (20).jpg" alt="Yoo Joonghyuk dans l'universe"></a>
+            <a href=""><img src="images/iconique pictures/blackbox  (30).jpg" alt="Kim Dokja et Yoo Joonghyuk regarde eux-même"></a>
+            <a href=""><img src="images/iconique pictures/blackbox  (42).jpg" alt="Hades et Persephone ensemble"></a>
+            <a href=""><img src="images/iconique pictures/blackbox  (7).jpg" alt="Kim Dokja et Yoo Joonghyuk dans le temps"></a>
+            <a href=""><img src="images/iconique pictures/blackbox  (73).jpg" alt="Kim Dokja fait enfoncer par un épée"></a>
+            <a href=""><img src="images/iconique pictures/novel official part1-24chap188 wider.jpeg" alt="Yoo Joonghyuk enfonce un épée à Kim Dokja"></a>
+        </div>
+    </section>
+
+<!--informations, avis, logos-->
+    <footer id="contacts">
+        <p>3800 Sherbrooke St E, Montreal, Quebec H1X 2A2</p>
+        <p>Intégration Multimédia, Collège de Maisonneuve</p>
+
+        <p class="petit_text"> Avis de confidentialité | Privacy Notice</p>
+
+        <div class="icon">
+            <ion-icon name="logo-youtube"></ion-icon>
+            <ion-icon name="logo-pinterest"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-discord"></ion-icon>
+        </div>    
+    </footer>
+
+
+    <!-- permet logo de apparaître-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
