@@ -138,6 +138,8 @@ header a:hover{
     width: 50rem;
     border: 2px solid white;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 fieldset{
